@@ -19,4 +19,10 @@
 # Configs
 /config/database.yml
 
+# Ignore ruby-version
+.ruby-version
+
+# Ignore ruby-gemset
+.ruby-gemset
+
 .byebug_history
