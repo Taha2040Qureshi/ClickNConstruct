@@ -289,9 +289,9 @@ Devise.setup do |config|
 
 
   if Rails.env.production?
-    config.omniauth :facebook, "520378484996599", "eb342f986605240a1fd52e58d2c1592c", callback_url: "https://clicknconstruct.herokuapp.com/users/auth/facebook/callback"
+    config.omniauth :facebook, "770067823201738", "157f81ddaf023e3677f2c13602905e71", callback_url: "https://clicknconstruct.herokuapp.com/users/auth/facebook/callback"
   elsif Rails.env.development?
-    config.omniauth :facebook, "520378484996599", "eb342f986605240a1fd52e58d2c1592c", callback_url: "http://localhost:3000/users/auth/facebook/callback"
+    config.omniauth :facebook, "137469470271609", "7954a881154063e275c0c7e8657dbcf9", callback_url: "http://localhost:3000/users/auth/facebook/callback"
   else
   end
 
