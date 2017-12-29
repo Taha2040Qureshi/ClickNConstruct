@@ -1,18 +1,21 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
+
+  require 'omniauth-google-oauth2'
+
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  
-  
+
+
   if Rails.env.production?
     # Only in case you want to run application in prodduction mode on server side
     config.secret_key = ENV['DEVISE_SECRET_KEY'] if Rails.env.production?
   elsif Rails.env.development?
-    #Only in case you want to run application in prodution mode on your local maschine 
+    #Only in case you want to run application in prodution mode on your local maschine
     config.secret_key = 'eb10cc2d217addfcd17de5c6185c77b73e860947168158a844406ddc8908b0655d042ad18effb90f1e40e0a85ca0ba2e476e52a8ba3227dbc30945051c96b215'
   else
   end
@@ -295,4 +298,27 @@ Devise.setup do |config|
   else
   end
 
+  config.omniauth :google_oauth2, "37520536159-56s5uuttltjme4u1gv1o3c3m9jd63avs.apps.googleusercontent.com", "PGu49q4d3WAu1ODim1vm8m6V", { redirect_uri: "http://localhost:3000/users/auth/google_oauth2/callback" }
 end
+
+
+
+# config.omniauth :google_oauth2, "GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET", { access_type: "offline", approval_prompt: ""  }
+
+# :redirect_uri => 'http://localhost:3000/users/auth/google_oauth2/callback'
+
+
+# ap id
+# AIzaSyDS7WowTtgNf3nSZJRiddKMWfHcKCxpcdk
+
+# cliennt id
+# 37520536159-56s5uuttltjme4u1gv1o3c3m9jd63avs.apps.googleusercontent.com
+
+# ap secret_key
+# HZkFNIm8dWzG-byGuL805-Qu
+
+
+
+
+#  config.omniauth :twitter, "KEY", "SECRET"
+#   config.omniauth :linked_in, "KEY", "SECRET"

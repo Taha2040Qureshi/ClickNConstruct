@@ -33,8 +33,13 @@ gem 'jbuilder', '~> 2.5'
 
 #gem added by clickNconstruct Developers
 gem 'devise'
-
+# [START omniauth]
+gem 'omniauth'
+# gem 'omniauth-twitter'
 gem 'omniauth-facebook'
+# gem 'omniauth-linkedin/'
+gem 'omniauth-google-oauth2'
+# [END omniauth]
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
