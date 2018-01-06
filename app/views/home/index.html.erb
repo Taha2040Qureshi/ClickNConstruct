@@ -1,10 +1,736 @@
-<div id="user_nav">
-  <% if user_signed_in? %>
-    Signed in as <%= current_user.email %>. Not you?
-    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-  <% else %>
-    <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %>
-    <br>
-    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
-  <% end %>
-</div>
+<!--Top Banner-->
+<section id="top-banner">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 top-banner-base no-padding">
+            <!-- START REVOLUTION SLIDER 4.6.5 b1 fullwidth mode -->
+
+            <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:#E9E9E9; z-index: 1;padding:0px;margin-top:0px;margin-bottom:0px;max-height:550px; ">
+                <div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;max-height:550px;height:550px;">
+                    <ul>
+                        <!-- SLIDE  1-->
+                        <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="<%= asset_path 'slider.jpg' %>"  data-saveperformance="off"  data-title="Slide">
+                            <!-- MAIN IMAGE -->
+                            <%= image_tag("slider.jpg", alt: "slider", data: { bgposition: "center top", bgfit: "cover", bgrepeat: "no-repeat"}) %>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption excerpt-small-size sft tp-resizeme rs-parallaxlevel-0"
+                                 data-x="377"
+                                 data-y="183"
+                                 data-speed="800"
+                                 data-start="2000"
+                                 data-easing="Power3.easeInOut"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.1"
+                                 data-endelementdelay="0.1"
+                                 data-endspeed="500"
+
+                                 style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">SKETCH YOU DREAM & BUILD WITH PASSION
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption excerpt-big sft tp-resizeme rs-parallaxlevel-0"
+                                 data-x="316"
+                                 data-y="254"
+                                 data-speed="1000"
+                                 data-start="2500"
+                                 data-easing="Power3.easeInOut"
+                                 data-splitin="chars"
+                                 data-splitout="none"
+                                 data-elementdelay="0.1"
+                                 data-endelementdelay="0.1"
+                                 data-endspeed="300"
+
+                                 style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">CONSTRUCT
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption small_text sfb tp-resizeme rs-parallaxlevel-0"
+                                 data-x="370"
+                                 data-y="336"
+                                 data-speed="800"
+                                 data-start="3800"
+                                 data-easing="Power3.easeInOut"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.1"
+                                 data-endelementdelay="0.1"
+                                 data-endspeed="500"
+
+                                 style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">58,000 colleagues | 25,000 projects | 160 countries
+                            </div>
+                        </li>
+                        <!-- SLIDE  2-->
+                        <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="<%= asset_path 'slider03.jpg' %>"  data-saveperformance="off"  data-title="Slide">
+                            <!-- MAIN IMAGE -->
+                            <%= image_tag("slider03.jpg", alt: "slider03", data: { bgposition: "center top", bgfit: "cover", bgrepeat: "no-repeat"}) %>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption excerpt sft tp-resizeme rs-parallaxlevel-0"
+                                 data-x="71"
+                                 data-y="160"
+                                 data-speed="500"
+                                 data-start="2000"
+                                 data-easing="Power3.easeInOut"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.1"
+                                 data-endelementdelay="0.1"
+                                 data-endspeed="500"
+
+                                 style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">BUILD YOUR<span> DREAM</span> WITH PASSION
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption small_text sfr tp-resizeme rs-parallaxlevel-0"
+                                 data-x="348"
+                                 data-y="267"
+                                 data-speed="500"
+                                 data-start="2400"
+                                 data-easing="Power3.easeInOut"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.1"
+                                 data-endelementdelay="0.1"
+                                 data-endspeed="500"
+
+                                 style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">Duis aute irure dolor in reprehenderit in voluptate<br> velit esse cillum dolore eu fugiat nulla.
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption small_text sfb tp-resizeme rs-parallaxlevel-0"
+                                 data-x="415"
+                                 data-y="349"
+                                 data-speed="500"
+                                 data-start="2800"
+                                 data-easing="Power3.easeInOut"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.1"
+                                 data-endelementdelay="0.1"
+                                 data-endspeed="500"
+
+                                 style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;"><a href='https://www.youtube.com/watch?v=ED2TYlJIVVU' class='sppb-btn-default slider-btn-one'>Learn More</a>
+                            </div>
+
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption small_text sfr tp-resizeme rs-parallaxlevel-0"
+                                 data-x="554"
+                                 data-y="349"
+                                 data-speed="500"
+                                 data-start="3200"
+                                 data-easing="Power3.easeInOut"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.1"
+                                 data-endelementdelay="0.1"
+                                 data-endspeed="500"
+
+                                 style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;"><a href='http://themeforest.net/item/construct-joomla-construction-business-template/14009704' class='slider-btn-two sppb-btn-default'>Purchase</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tp-bannertimer"></div>  </div>
+            </div>
+            <!-- END REVOLUTION SLIDER -->
+        </div>
+        </div>
+    </div>
+</section>
+<!--Services-->
+<section id="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 no-padding service-title">
+                <div class="col-sm-8 col-md-10 heading text-left ">
+                    <h3>Construction firm sence 1954. We build your dreams :)</h3>
+                </div>
+                <div class="col-sm-4 col-md-2 button text-right">
+                    <a href="#" class="btn">get a quote</a>
+                </div>
+            </div>
+            <div class="col-sm-12 service-base space">
+                <div class="col-sm-4 service-block">
+                    <div class="service-inner">
+                        <%= image_tag("construction1.jpg", alt: "Services") %>
+                        <div class="service-text">
+                            <h4>CONSTRUCTION</h4>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas venenatis soll icitudin neque, ve Class aptent taci </p>
+                            <a href="#">read more</a>
+                        </div>
+                        <div class="service-top-btn">
+                            <p class="top-btn">Recomemded</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 service-block">
+                    <div class="service-inner">
+                        <%= image_tag("work-2.jpg", alt: "Services") %>
+                        <div class="service-text">
+                            <h4>ARCHITECTURE</h4>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas venenatis soll icitudin neque, ve Class aptent taci </p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 service-block">
+                    <div class="service-inner">
+                        <%= image_tag("fulll-team.jpg", alt: "Services") %>
+                        <div class="service-text">
+                            <h4>CONSULTING</h4>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas venenatis soll icitudin neque, ve Class aptent taci </p>
+                            <a href="#">read more</a>
+                        </div>
+                        <div class="service-top-btn">
+                            <p class="top-btn">Best Service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Portfolio-->
+<section id="portfolio">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 portfolio-base no-padding">
+                <div class="main-heading col-sm-12 text-center">
+                    <h2>FEATURE WORK</h2>
+                </div>
+                <div id="mod-sp-simpleportfolio" class="sp-simpleportfolio sp-simpleportfolio-view-items layout-gallery-nospace ">
+                    <div class="sp-simpleportfolio-filter">
+                        <ul>
+                            <li class="active" data-group="all"><a href="#">Show All</a></li>
+                            <li data-group="builder"><a href="#">Builder</a></li>
+                            <li data-group="electric"><a href="#">Electric</a></li>
+                            <li data-group="painting"><a href="#">painting</a></li>
+                            <li data-group="hammer"><a href="#">Hammer</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sp-simpleportfolio-items sp-simpleportfolio-columns-4">
+                        <div class="sp-simpleportfolio-item" data-groups='["hammer"]'>
+                            <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+                                <%= image_tag("work-6_600x400.jpg", class: "sp-simpleportfolio-img" ,alt: "Embedded in our culture") %>
+                                <div class="sp-simpleportfolio-overlay">
+                                    <div class="sp-vertical-middle">
+                                        <div>
+                                            <h3 class="sp-simpleportfolio-title">
+                                                <a href="#">Embedded in our culture </a>
+                                            </h3>
+                                            <div class="sp-simpleportfolio-btns">
+                                                <a class="btn-zoom" href="<%= asset_path("work-6_600x400.jpg") %>" data-featherlight="image"><i class="fa fa-search-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sp-simpleportfolio-item" data-groups='["builder"]'>
+                            <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+                                <%= image_tag("work-1_600x400.jpg", class: "sp-simpleportfolio-img" ,alt: "The roof top apartment") %>
+                                <div class="sp-simpleportfolio-overlay">
+                                    <div class="sp-vertical-middle">
+                                        <div>
+                                            <h3 class="sp-simpleportfolio-title">
+                                                <a href="#">The roof top apartment</a>
+                                            </h3>
+                                            <div class="sp-simpleportfolio-btns">
+                                                <a class="btn-zoom" href="<%= asset_path("work-1_600x400.jpg")%>" data-featherlight="image"><i class="fa fa-search-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sp-simpleportfolio-item" data-groups='["builder"]'>
+                            <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+                                <%= image_tag("work-8_600x400.jpg", class: "sp-simpleportfolio-img" ,alt: "Roof top building") %>
+                                <div class="sp-simpleportfolio-overlay">
+                                    <div class="sp-vertical-middle">
+                                        <div>
+                                            <h3 class="sp-simpleportfolio-title">
+                                                <a href="#"> top building</a>
+                                            </h3>
+                                            <div class="sp-simpleportfolio-btns">
+                                                <a class="btn-zoom" href="<%= asset_path("work-8_600x400.jpg")%>" data-featherlight="image"><i class="fa fa-search-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sp-simpleportfolio-item" data-groups='["painting"]'>
+                            <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+                                <%= image_tag("work-7_600x400.jpg", class: "sp-simpleportfolio-img" ,alt: "House building") %>
+                                <div class="sp-simpleportfolio-overlay">
+                                    <div class="sp-vertical-middle">
+                                        <div>
+                                            <h3 class="sp-simpleportfolio-title">
+                                                <a href="#">House building</a>
+                                            </h3>
+                                            <div class="sp-simpleportfolio-btns">
+                                                <a class="btn-zoom" href="<%= asset_path("work-7_600x400.jpg")%>" data-featherlight="image"><i class="fa fa-search-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sp-simpleportfolio-item" data-groups='["electric"]'>
+                            <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+                                <%= image_tag("work-1234_600x400.jpg", class: "sp-simpleportfolio-img" ,alt: "The Great LondonProject") %>
+                                <div class="sp-simpleportfolio-overlay">
+                                    <div class="sp-vertical-middle">
+                                        <div>
+                                            <h3 class="sp-simpleportfolio-title">
+                                                <a href="#">The Great LondonProject</a>
+                                            </h3>
+                                            <div class="sp-simpleportfolio-btns">
+                                                <a class="btn-zoom" href="<%= asset_path("work-1234_600x400.jpg")%>" data-featherlight="image"><i class="fa fa-search-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sp-simpleportfolio-item" data-groups='["builder"]'>
+                            <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+                                <%= image_tag("work-4_600x400.jpg", class: "sp-simpleportfolio-img" ,alt: "Organic Life project") %>
+                                <div class="sp-simpleportfolio-overlay">
+                                    <div class="sp-vertical-middle">
+                                        <div>
+                                            <h3 class="sp-simpleportfolio-title">
+                                                <a href="#">Organic Life project</a>
+                                            </h3>
+                                            <div class="sp-simpleportfolio-btns">
+                                                <a class="btn-zoom" href="<%= asset_path("work-4_600x400.jpg")%>" data-featherlight="image"><i class="fa fa-search-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sp-simpleportfolio-item" data-groups='["electric"]'>
+                            <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+                                <%= image_tag("work-12345_600x400.jpg", class: "sp-simpleportfolio-img" ,alt: "New York Project") %>
+                                <div class="sp-simpleportfolio-overlay">
+                                    <div class="sp-vertical-middle">
+                                        <div>
+                                            <h3 class="sp-simpleportfolio-title">
+                                                <a href="#">New York Project</a>
+                                            </h3>
+                                            <div class="sp-simpleportfolio-btns">
+                                                <a class="btn-zoom" href="<%= asset_path("work-12345_600x400.jpg")%>" data-featherlight="image"><i class="fa fa-search-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sp-simpleportfolio-item" data-groups='["electric"]'>
+                            <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+                                <%= image_tag("work_600x400.jpg", class: "sp-simpleportfolio-img" ,alt: "The big Project we have") %>
+                                <div class="sp-simpleportfolio-overlay">
+                                    <div class="sp-vertical-middle">
+                                        <div>
+                                            <h3 class="sp-simpleportfolio-title">
+                                                <a href="#">The big Project we have</a>
+                                            </h3>
+                                            <div class="sp-simpleportfolio-btns">
+                                                <a class="btn-zoom" href="<%= asset_path("work_600x400.jpg")%>" data-featherlight="image"><i class="fa fa-search-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Portfolio -->
+
+<!-- About us -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 about-base space">
+                <div class="col-sm-12 col-md-4 about-block">
+                    <%= image_tag("img1.jpg",alt: "About") %>
+                    <h5>ABOUT COMPANY</h5>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas venenatis soll icitudin neque, ve Class aptent taci</p>
+                </div>
+                <div class="col-sm-6 col-md-4 about-block">
+                    <div class="about-item col-sm-12 col-xs-12 no-padding">
+                        <div class="col-sm-3 col-xs-4 about-icon no-padding">
+                            <i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i>
+                            <!-- <i class="fa icon-lightbulb fa-4x"></i> fa-4x -->
+                             <!-- <i class="fa fa-facebook big"></i> -->
+                            <!-- <span class="icon-lightbulb"></span> -->
+                            <!-- <i class="icon-lightbulb">  icon-lightbulb
+                            <i class="fa fa-facebook"> -->
+                                <!-- <span class="fa-stack pull-right"> -->
+                                <!-- <i class="fa fa-camera-retro"></i> -->
+                                <!-- <i class="icon-lightbulb"></i> normal<br> -->
+                            <!-- <span class="sr-only">Loading...</span> -->
+                        </div>
+                        <div class="about-text col-sm-9 col-xs-8 no-padding">
+                            <h6>BRILLIANT IDEAS</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit. Integer adipiscing erat eg</p>
+                        </div>
+                    </div>
+                    <div class="about-item col-sm-12 col-xs-12 no-padding">
+                        <div class="col-sm-3 col-xs-3 about-icon no-padding">
+                            <i class="fa fa-key fa-3x" aria-hidden="true"></i>
+                        </div>
+                        <div class="about-text col-sm-9 col-xs-8 no-padding">
+                            <h6>PROFESSINAL SPECIALISTS</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit. Integer adipiscing erat eg</p>
+                        </div>
+                    </div>
+                    <div class="about-item col-sm-12 col-xs-12 no-padding">
+                        <div class="col-sm-3 col-xs-4 about-icon no-padding">
+                            <i class="fa fa-puzzle-piece fa-3x" aria-hidden="true"></i>
+                        </div>
+                        <div class="about-text col-sm-9 col-xs-8 no-padding">
+                            <h6>PLANNING</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit. Integer adipiscing erat eg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 about-block">
+                    <div class="about-item col-sm-12 col-xs-12 no-padding">
+                        <div class="col-sm-3 col-xs-4 about-icon no-padding">
+                            <i class="fa fa-university fa-3x" aria-hidden="true"></i>
+                        </div>
+                        <div class="about-text col-sm-9 col-xs-8 no-padding">
+                            <h6>REVULUTION</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit. Integer adipiscing erat eg</p>
+                        </div>
+                    </div>
+                    <div class="about-item col-sm-12 col-xs-12 no-padding">
+                        <div class="col-sm-3 col-xs-4 about-icon no-padding">
+                            <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
+                        </div>
+                        <div class="about-text col-sm-9 col-xs-8 no-padding">
+                            <h6>WORLD WIDE BRANCH</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit. Integer adipiscing erat eg</p>
+                        </div>
+                    </div>
+                    <div class="about-item col-sm-12 col-xs-12 no-padding">
+                        <div class="col-sm-3 col-xs-4 about-icon no-padding">
+                            <i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
+                        </div>
+                        <div class="about-text col-sm-9 col-xs-8 no-padding">
+                            <h6>SAFE WORK</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit. Integer adipiscing erat eg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end About us -->
+
+<!-- Counter -->
+<section id="counter">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 counter-base space">
+                <!-- Counter block 1 -->
+                <div class="col-sm-3 counter-block text-center">
+                    <div class="count">1035</div>
+                    <h4>Completed <span>Project</span></h4>
+                </div>
+                <!-- Counter block 2 -->
+                <div class="col-sm-3 counter-block text-center">
+                    <div class="count">1124</div>
+                    <h4>Cup <span>Coffee</span></h4>
+                </div>
+                <!-- Counter block 3 -->
+                <div class="col-sm-3 counter-block text-center">
+                    <div class="count">867</div>
+                    <h4>Happy <span>Client</span></h4>
+                </div>
+                <!-- Counter block 4 -->
+                <div class="col-sm-3 counter-block text-center">
+                    <div class="count">538</div>
+                    <h4>Developer <span>Hand</span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end counter -->
+
+<!-- Certifications -->
+<section id="certification">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 certification space">
+                <div class="main-heading text-center col-sm-12">
+                    <h2>CERTIFICATION</h2>
+                    <p>Embedded in our culture of hard work, honesty, and getting the well done job,</p>
+                </div>
+                <div class="certi-base col-sm-12 no-padding">
+                    <div class="col-sm-4 certi-block text-center animate-in move-up">
+                        <span class="icon-tools-2"></span>
+                        <h4>SAFETY</h4>
+                        <p>pork sirloi loine beefb andoe uillen uillen capicola swine a kevin mignon tritip picolakevin mignon tritip picola kevinsdertand filet mignon</p>
+                    </div>
+                    <div class="col-sm-4 certi-block text-center animate-in move-up">
+                        <span class="icon-recycle"></span>
+                        <h4>COMMUNITY</h4>
+                        <p>pork sirloi loine beefb andoe uillen uillen capicola swine a kevin mignon tritip picolakevin mignon tritip picola kevinsdertand filet mignon</p>
+                    </div>
+                    <div class="col-sm-4 certi-block text-center animate-in move-up">
+                        <span class="icon-circle-compass"></span>
+                        <h4>SUSTANABILITY</h4>
+                        <p>pork sirloi loine beefb andoe uillen uillen capicola swine a kevin mignon tritip picolakevin mignon tritip picola kevinsdertand filet mignon</p>
+                    </div>
+                    <div class="col-sm-4 certi-block text-center animate-in move-up">
+                        <span class="icon-trophy"></span>
+                        <h4>BEST QUALITY</h4>
+                        <p>pork sirloi loine beefb andoe uillen uillen capicola swine a kevin mignon tritip picolakevin mignon tritip picola kevinsdertand filet mignon</p>
+                    </div>
+                    <div class="col-sm-4 certi-block text-center animate-in move-up">
+                        <span class="icon-pencil"></span>
+                        <h4>INTEGRITY</h4>
+                        <p>pork sirloi loine beefb andoe uillen uillen capicola swine a kevin mignon tritip picolakevin mignon tritip picola kevinsdertand filet mignon</p>
+                    </div>
+                    <div class="col-sm-4 certi-block text-center animate-in move-up">
+                        <span class=" icon-strategy"></span>
+                        <h4>STRATEGY</h4>
+                        <p>pork sirloi loine beefb andoe uillen uillen capicola swine a kevin mignon tritip picolakevin mignon tritip picola kevinsdertand filet mignon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Certifications -->
+
+<!-- Start work -->
+<section id="work">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 work space">
+                <div class="col-sm-8 work-block animate-in left-out">
+                    <h3>Lets make your
+                        <span>DREAM HOUSE</span>
+                        with our best
+                        <span>ENGINEERS</span></h3>
+                    <p>
+                        Embedded in our
+                        <em> culture </em>
+                        of hard
+                        <em>work</em>
+                        , honesty, and
+                        <em>
+                            getting the well done job
+                        </em>
+                    </p>
+                </div>
+                <div class="col-sm-4 work-block text-right animate-in right-out">
+                    <a href="#" class="btn">start project</a>
+                    <a href="#" class="btn">call now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end work -->
+
+<!-- News -->
+<section id="news">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 news space">
+                <div class="main-heading text-center col-sm-12">
+                    <h2>RECENT NEWS</h2>
+                    <p>Embedded in our culture of hard work, honesty, and getting the well done job,</p>
+                </div>
+                <div class="news-base col-sm-12 no-padding">
+                    <!-- News slider -->
+                    <div id="news-slider">
+                        <!-- slide 1 -->
+                        <div class="item">
+                            <div class="col-sm-12 news-block">
+                                <div class="news-inner">
+                                    <%= image_tag("blog-3_360x230.jpg",alt: "Services") %>
+                                    <div class="news-text">
+                                        <h4><a href="#">Earn Industry Award this year.</a></h4>
+                                        <ul class="news-post-info">
+                                            <li><i class="fa fa-user"></i>By <span>Super User</span></li>
+                                            <li><a href="#"><i class="fa fa-comment-o"></i><span>0</span> Comment</a></li>
+                                        </ul>
+                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vesti bulum tortor quam, feugiat vitae, ultricies...</p>
+                                        <a href="#">read more</a>
+                                    </div>
+                                    <div class="news-top-btn">
+                                        <p class="top-btn"><i class="fa fa-calendar"></i> 01 DEC 2015 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 2 -->
+                        <div class="item">
+                            <div class="col-sm-12 news-block">
+                                <div class="news-inner">
+                                    <%= image_tag("blog-1_360x230.jpg",alt: "Services") %>
+                                    <div class="news-text">
+                                        <h4><a href="#">Earn Industry Award this year.</a></h4>
+                                        <ul class="news-post-info">
+                                            <li><i class="fa fa-user"></i>By <span>Super User</span></li>
+                                            <li><a href="#"><i class="fa fa-comment-o"></i><span>0</span> Comment</a></li>
+                                        </ul>
+                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vesti bulum tortor quam, feugiat vitae, ultricies...</p>
+                                        <a href="#">read more</a>
+                                    </div>
+                                    <div class="news-top-btn">
+                                        <p class="top-btn"><i class="fa fa-calendar"></i> 01 DEC 2015 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 3 -->
+                        <div class="item">
+                            <div class="col-sm-12 news-block">
+                                <div class="news-inner">
+                                    <%= image_tag("blog-4_360x230.jpg",alt: "Services") %>
+                                    <div class="news-text">
+                                        <h4><a href="#">Earn Industry Award this year.</a></h4>
+                                        <ul class="news-post-info">
+                                            <li><i class="fa fa-user"></i>By <span>Super User</span></li>
+                                            <li><a href="#"><i class="fa fa-comment-o"></i><span>0</span> Comment</a></li>
+                                        </ul>
+                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vesti bulum tortor quam, feugiat vitae, ultricies...</p>
+                                        <a href="#">read more</a>
+                                    </div>
+                                    <div class="news-top-btn">
+                                        <p class="top-btn"><i class="fa fa-calendar"></i> 01 DEC 2015 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 4 -->
+                        <div class="item">
+                            <div class="col-sm-12 news-block">
+                                <div class="news-inner">
+                                    <%= image_tag("blog-5_360x230.jpg",alt: "Services") %>
+                                    <div class="news-text">
+                                        <h4><a href="#">Earn Industry Award this year.</a></h4>
+                                        <ul class="news-post-info">
+                                            <li><i class="fa fa-user"></i>By <span>Super User</span></li>
+                                            <li><a href="#"><i class="fa fa-comment-o"></i><span>0</span> Comment</a></li>
+                                        </ul>
+                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vesti bulum tortor quam, feugiat vitae, ultricies...</p>
+                                        <a href="#">read more</a>
+                                    </div>
+                                    <div class="news-top-btn">
+                                        <p class="top-btn"><i class="fa fa-calendar"></i> 01 DEC 2015 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- News end -->
+
+<!-- Team -->
+<section id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 team-base space">
+                <div id="team-slider">
+                    <div class="item">
+                        <div class="col-sm-12 team-block text-center">
+                            <%= image_tag("team01.jpg",alt: "Testimonials") %>
+                            <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet pellentesque felis. Morbi in sem quis dui placerat ornare.entesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+                            <div class="name">John Doe</div>
+                            <div class="profession">Founder, Oxford</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-sm-12 team-block text-center">
+                            <%= image_tag("team08.jpg",alt: "Testimonials") %>
+                            <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet pellentesque felis. Morbi in sem quis dui placerat ornare.entesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+                            <div class="name">John Doe</div>
+                            <div class="profession">Founder, Oxford</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Team end -->
+
+<!-- Partner logo -->
+<section id="partner">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 partner space">
+                <div class="main-heading text-center col-sm-12">
+                    <h2>PARTNERS</h2>
+                    <p>Embedded in our culture of hard work, honesty, and getting the well done job,</p>
+                </div>
+                <div class="col-sm-12 partner-base no-padding">
+                    <ul>
+                        <li class="col-sm-2 animate-in left-out">
+                            <a href="#">
+                                <%= image_tag("original_100_client-11.png",alt: "Partners") %>
+                            </a>
+                        </li>
+                        <li class="col-sm-2 animate-in left-out">
+                            <a href="#">
+                                <%= image_tag("client-2.png",alt: "Partners") %>
+                            </a>
+                        </li>
+                        <li class="col-sm-2 animate-in left-out">
+                            <a href="#">
+                                <%= image_tag("client-3.png",alt: "Partners") %>
+                            </a>
+                        </li>
+                        <li class="col-sm-2 animate-in left-out">
+                            <a href="#">
+                                <%= image_tag("client-4.png",alt: "Partners") %>
+                            </a>
+                        </li>
+                        <li class="col-sm-2 animate-in left-out">
+                            <a href="#">
+                                <%= image_tag("client-5.png",alt: "Partners") %>
+                            </a>
+                        </li>
+                        <li class="col-sm-2 animate-in left-out">
+                            <a href="#">
+                                <%= image_tag("client-6.png",alt: "Partners") %>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Partner logo end -->
