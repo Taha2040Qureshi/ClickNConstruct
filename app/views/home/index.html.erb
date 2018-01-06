@@ -9,10 +9,9 @@
                 <div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;max-height:550px;height:550px;">
                     <ul>
                         <!-- SLIDE  1-->
-                        <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="images/slider.jpg"  data-saveperformance="off"  data-title="Slide">
+                        <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="<%= asset_path 'slider.jpg' %>"  data-saveperformance="off"  data-title="Slide">
                             <!-- MAIN IMAGE -->
-                            <%#= image_tag("slider.jpg", alt: "slider", data: { bgposition: "center top", bgfit: "cover", bgrepeat: "no-repeat"}) %>
-                            <img src="slider.jpg"  alt="slider"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            <%= image_tag("slider.jpg", alt: "slider", data: { bgposition: "center top", bgfit: "cover", bgrepeat: "no-repeat"}) %>
                             <!-- LAYERS -->
 
                             <!-- LAYER NR. 1 -->
@@ -64,9 +63,9 @@
                             </div>
                         </li>
                         <!-- SLIDE  2-->
-                        <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="images/slider03.jpg"  data-saveperformance="off"  data-title="Slide">
+                        <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="<%= asset_path 'slider03.jpg' %>"  data-saveperformance="off"  data-title="Slide">
                             <!-- MAIN IMAGE -->
-                            <img src="images/slider03.jpg"  alt="slider03"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            <%= image_tag("slider03.jpg", alt: "slider03", data: { bgposition: "center top", bgfit: "cover", bgrepeat: "no-repeat"}) %>
                             <!-- LAYERS -->
 
                             <!-- LAYER NR. 1 -->

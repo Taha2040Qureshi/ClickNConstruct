@@ -10,20 +10,22 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery3
+//= require jquery_ujs
 //= require rails-ujs
+//= jQuery
 //= require turbolinks
 //= require_tree .
-//= jQuery.js
-//= bootstrap.js
-//= jquery.matchHeight-min.js
-//= appear.js
-//= featherlight.min.js
-//= jquery.shuffle.modernizr.min.js
-//= jquery.prettyPhoto.js
-//= spsimpleportfolio.js
-//= owl.carousel.js
-//= rev-tool.js
-//= revolation.js
-//= count-down.js
-//= parallex.js
-//= custom.js
+//= bootstrap
+//= jquery.matchHeight-min
+//= appear
+//= featherlight.min
+//= jquery.shuffle.modernizr.min
+//= jquery.prettyPhoto
+//= spsimpleportfolio
+//= owl.carousel
+//= rev-tool
+//= revolation
+//= count-down
+//= parallex
+//= custom

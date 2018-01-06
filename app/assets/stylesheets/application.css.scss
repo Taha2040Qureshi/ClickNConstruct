@@ -13,8 +13,6 @@
  *= require_tree .
  *= require_self
  *= bootstrap.css
- *= et-fonts.css
- *= font-awesome.min.css
  *= settings.css
  *= static-captions.css
  *= preset1.css
@@ -25,3 +23,5 @@
  *= spsimpleportfolio.css
  *= style.css
  */
+@import "font-awesome-sprockets";
+@import "font-awesome";

@@ -31,10 +31,29 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
+
+
+# =================================================================
+
+
 #gem added by clickNconstruct Developers
 gem 'devise'
 
 gem 'omniauth-facebook'
+
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+# gem 'jquery-ui-rails'
+
+
+gem 'font-awesome-sass', '~> 4.7.0'
+
+
+
+
+# =================================================================
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
