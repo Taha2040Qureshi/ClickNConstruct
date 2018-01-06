@@ -14,9 +14,9 @@ website:   	http://www.themepunch.com
 
 @font-face {
   font-family: 'revicons';
-  src: url('../fonts/revicons90c6.eot?5510888');
-       url('../fonts/revicons90c6.woff?5510888') format('woff'),
-       url('../fonts/revicons90c6.ttf?5510888') format('truetype'),
+  src: url('revicons90c6.eot?5510888'),
+       url('revicons90c6.woff?5510888') format('woff'),
+       url('revicons90c6.ttf?5510888') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -410,10 +410,10 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 	-	DOTTED OVERLAYS	-
 *********************************/
 .tp-dottedoverlay						{	background-repeat:repeat;width:100%;height:100%;position:absolute;top:0px;left:0px;z-index:3}
-.tp-dottedoverlay.twoxtwo				{	background:url(../assets/gridtile.html)}
-.tp-dottedoverlay.twoxtwowhite			{	background:url(../assets/gridtile_white.html)}
-.tp-dottedoverlay.threexthree			{	background:url(../assets/gridtile_3x3.html)}
-.tp-dottedoverlay.threexthreewhite		{	background:url(../assets/gridtile_3x3_white.html)}
+.tp-dottedoverlay.twoxtwo				{	background:url(gridtile.html)}
+.tp-dottedoverlay.twoxtwowhite			{	background:url(gridtile_white.html)}
+.tp-dottedoverlay.threexthree			{	background:url(gridtile_3x3.html)}
+.tp-dottedoverlay.threexthreewhite		{	background:url(gridtile_3x3_white.html)}
 
 /********************************
 	-	DOTTED OVERLAYS ENDS	-
@@ -484,9 +484,9 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
         -o-user-select: none;
 	}
 
-.tp-bannershadow.tp-shadow1 {	background:url(../assets/shadow1.html) no-repeat; background-size:100% 100%; width:890px; height:30px; bottom:-30px}
-.tp-bannershadow.tp-shadow2 {	background:url(../assets/shadow2.html) no-repeat; background-size:100% 100%; width:890px; height:60px;bottom:-60px}
-.tp-bannershadow.tp-shadow3 {	background:url(../assets/shadow3.html) no-repeat; background-size:100% 100%; width:890px; height:60px;bottom:-60px}
+.tp-bannershadow.tp-shadow1 {	background:url(shadow1.html) no-repeat; background-size:100% 100%; width:890px; height:30px; bottom:-30px}
+.tp-bannershadow.tp-shadow2 {	background:url(shadow2.html) no-repeat; background-size:100% 100%; width:890px; height:60px;bottom:-60px}
+.tp-bannershadow.tp-shadow3 {	background:url(shadow3.html) no-repeat; background-size:100% 100%; width:890px; height:60px;bottom:-60px}
 
 
 /******************************
@@ -501,11 +501,11 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 			height:30px;
 			cursor:pointer;
 			color:#fff !important; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6) !important; font-size:15px; line-height:45px !important;
-			background:url(../images/gradient/g30.html) repeat-x top; font-family: arial, sans-serif; font-weight: bold; letter-spacing: -1px;
+			background:url(g30.html) repeat-x top; font-family: arial, sans-serif; font-weight: bold; letter-spacing: -1px;
 			text-decoration:none;
 		}
 
-.tp-button.big			{	color:#fff; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6); font-weight:bold; padding:9px 20px; font-size:19px;  line-height:57px !important; background:url(../images/gradient/g40.html) repeat-x top}
+.tp-button.big			{	color:#fff; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6); font-weight:bold; padding:9px 20px; font-size:19px;  line-height:57px !important; background:url(g40.html) repeat-x top}
 
 
 .purchase:hover,
@@ -574,30 +574,30 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 										}
 
 
-.tp-bullets.simplebullets.navbar						{ 	border:1px solid #666; border-bottom:1px solid #444; background:url(../assets/boxed_bgtile.html); height:40px; padding:0px 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px }
+.tp-bullets.simplebullets.navbar						{ 	border:1px solid #666; border-bottom:1px solid #444; background:url(boxed_bgtile.html); height:40px; padding:0px 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px }
 
-.tp-bullets.simplebullets.navbar-old					{ 	 background:url(../assets/navigdots_bgtile.html); height:35px; padding:0px 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px }
+.tp-bullets.simplebullets.navbar-old					{ 	 background:url(navigdots_bgtile.html); height:35px; padding:0px 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px }
 
 
-.tp-bullets.simplebullets.round .bullet					{	cursor:pointer; position:relative;	background:url(../assets/bullet.html) no-repeat top left;	width:20px;	height:20px;  margin-right:0px; float:left; margin-top:0px; margin-left:3px}
+.tp-bullets.simplebullets.round .bullet					{	cursor:pointer; position:relative;	background:url(bullet.html) no-repeat top left;	width:20px;	height:20px;  margin-right:0px; float:left; margin-top:0px; margin-left:3px}
 .tp-bullets.simplebullets.round .bullet.last			{	margin-right:3px}
 
-.tp-bullets.simplebullets.round-old .bullet				{	cursor:pointer; position:relative;	background:url(../assets/bullets.html) no-repeat bottom left;	width:23px;	height:23px;  margin-right:0px; float:left; margin-top:0px}
+.tp-bullets.simplebullets.round-old .bullet				{	cursor:pointer; position:relative;	background:url(bullets.html) no-repeat bottom left;	width:23px;	height:23px;  margin-right:0px; float:left; margin-top:0px}
 .tp-bullets.simplebullets.round-old .bullet.last		{	margin-right:0px}
 
 
 /**	SQUARE BULLETS **/
-.tp-bullets.simplebullets.square .bullet				{	cursor:pointer; position:relative;	background:url(../assets/bullets2.html) no-repeat bottom left;	width:19px;	height:19px;  margin-right:0px; float:left; margin-top:0px}
+.tp-bullets.simplebullets.square .bullet				{	cursor:pointer; position:relative;	background:url(bullets2.html) no-repeat bottom left;	width:19px;	height:19px;  margin-right:0px; float:left; margin-top:0px}
 .tp-bullets.simplebullets.square .bullet.last			{	margin-right:0px}
 
 
 /**	SQUARE BULLETS **/
-.tp-bullets.simplebullets.square-old .bullet			{	cursor:pointer; position:relative;	background:url(../assets/bullets2.html) no-repeat bottom left;	width:19px;	height:19px;  margin-right:0px; float:left; margin-top:0px}
+.tp-bullets.simplebullets.square-old .bullet			{	cursor:pointer; position:relative;	background:url(bullets2.html) no-repeat bottom left;	width:19px;	height:19px;  margin-right:0px; float:left; margin-top:0px}
 .tp-bullets.simplebullets.square-old .bullet.last		{	margin-right:0px}
 
 
 /** navbar NAVIGATION VERSION **/
-.tp-bullets.simplebullets.navbar .bullet				{	cursor:pointer; position:relative;	background:url(../assets/bullet_boxed.html) no-repeat top left;	width:18px;	height:19px;   margin-right:5px; float:left; margin-top:10px}
+.tp-bullets.simplebullets.navbar .bullet				{	cursor:pointer; position:relative;	background:url(bullet_boxed.html) no-repeat top left;	width:18px;	height:19px;   margin-right:5px; float:left; margin-top:10px}
 
 .tp-bullets.simplebullets.navbar .bullet.first			{	margin-left:0px !important}
 .tp-bullets.simplebullets.navbar .bullet.last			{	margin-right:0px !important}
@@ -605,7 +605,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 
 
 /** navbar NAVIGATION VERSION **/
-.tp-bullets.simplebullets.navbar-old .bullet			{	cursor:pointer; position:relative;	background:url(../assets/navigdots.html) no-repeat bottom left;	width:15px;	height:15px;  margin-left:5px !important; margin-right:5px !important;float:left; margin-top:10px}
+.tp-bullets.simplebullets.navbar-old .bullet			{	cursor:pointer; position:relative;	background:url(navigdots.html) no-repeat bottom left;	width:15px;	height:15px;  margin-left:5px !important; margin-right:5px !important;float:left; margin-top:10px}
 .tp-bullets.simplebullets.navbar-old .bullet.first		{	margin-left:0px !important}
 .tp-bullets.simplebullets.navbar-old .bullet.last		{	margin-right:0px !important}
 
@@ -647,36 +647,36 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 .tp-rightarrow											{	z-index:100;cursor:pointer; position:relative;	background:url(large_right.png) no-repeat top left;	width:40px;	height:40px;   }
 
 
-.tp-leftarrow.round										{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/small_left.html) no-repeat top left;	width:19px;	height:14px;  margin-right:0px; float:left; margin-top:0px;	}
-.tp-rightarrow.round									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/small_right.html) no-repeat top left;	width:19px;	height:14px;  margin-right:0px; float:left;	margin-top:0px}
+.tp-leftarrow.round										{	z-index:100;cursor:pointer; position:relative;	background:url(small_left.html) no-repeat top left;	width:19px;	height:14px;  margin-right:0px; float:left; margin-top:0px;	}
+.tp-rightarrow.round									{	z-index:100;cursor:pointer; position:relative;	background:url(small_right.html) no-repeat top left;	width:19px;	height:14px;  margin-right:0px; float:left;	margin-top:0px}
 
 
-.tp-leftarrow.round-old									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_left.html) no-repeat top left;	width:26px;	height:26px;  margin-right:0px; float:left; margin-top:0px;	}
-.tp-rightarrow.round-old								{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_right.html) no-repeat top left;	width:26px;	height:26px;  margin-right:0px; float:left;	margin-top:0px}
+.tp-leftarrow.round-old									{	z-index:100;cursor:pointer; position:relative;	background:url(arrow_left.html) no-repeat top left;	width:26px;	height:26px;  margin-right:0px; float:left; margin-top:0px;	}
+.tp-rightarrow.round-old								{	z-index:100;cursor:pointer; position:relative;	background:url(arrow_right.html) no-repeat top left;	width:26px;	height:26px;  margin-right:0px; float:left;	margin-top:0px}
 
 
-.tp-leftarrow.navbar									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/small_left_boxed.html) no-repeat top left;	width:20px;	height:15px;   float:left;	margin-right:6px; margin-top:12px}
-.tp-rightarrow.navbar									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/small_right_boxed.html) no-repeat top left;	width:20px;	height:15px;   float:left;	margin-left:6px; margin-top:12px}
+.tp-leftarrow.navbar									{	z-index:100;cursor:pointer; position:relative;	background:url(small_left_boxed.html) no-repeat top left;	width:20px;	height:15px;   float:left;	margin-right:6px; margin-top:12px}
+.tp-rightarrow.navbar									{	z-index:100;cursor:pointer; position:relative;	background:url(small_right_boxed.html) no-repeat top left;	width:20px;	height:15px;   float:left;	margin-left:6px; margin-top:12px}
 
 
-.tp-leftarrow.navbar-old								{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrowleft.html) no-repeat top left;		width:9px;	height:16px;   float:left;	margin-right:6px; margin-top:10px}
-.tp-rightarrow.navbar-old								{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrowright.html) no-repeat top left;	width:9px;	height:16px;   float:left;	margin-left:6px; margin-top:10px}
+.tp-leftarrow.navbar-old								{	z-index:100;cursor:pointer; position:relative;	background:url(arrowleft.html) no-repeat top left;		width:9px;	height:16px;   float:left;	margin-right:6px; margin-top:10px}
+.tp-rightarrow.navbar-old								{	z-index:100;cursor:pointer; position:relative;	background:url(arrowright.html) no-repeat top left;	width:9px;	height:16px;   float:left;	margin-left:6px; margin-top:10px}
 
 .tp-leftarrow.navbar-old.thumbswitharrow				{	margin-right:10px; }
 .tp-rightarrow.navbar-old.thumbswitharrow				{	margin-left:0px; }
 
-.tp-leftarrow.square									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_left2.html) no-repeat top left;	width:12px;	height:17px;   float:left;	margin-right:0px; margin-top:0px}
-.tp-rightarrow.square									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_right2.html) no-repeat top left;	width:12px;	height:17px;   float:left;	margin-left:0px; margin-top:0px}
+.tp-leftarrow.square									{	z-index:100;cursor:pointer; position:relative;	background:url(arrow_left2.html) no-repeat top left;	width:12px;	height:17px;   float:left;	margin-right:0px; margin-top:0px}
+.tp-rightarrow.square									{	z-index:100;cursor:pointer; position:relative;	background:url(arrow_right2.html) no-repeat top left;	width:12px;	height:17px;   float:left;	margin-left:0px; margin-top:0px}
 
 
-.tp-leftarrow.square-old								{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_left2.html) no-repeat top left;	width:12px;	height:17px;   float:left;	margin-right:0px; margin-top:0px}
-.tp-rightarrow.square-old								{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_right2.html) no-repeat top left;	width:12px;	height:17px;   float:left;	margin-left:0px; margin-top:0px}
+.tp-leftarrow.square-old								{	z-index:100;cursor:pointer; position:relative;	background:url(arrow_left2.html) no-repeat top left;	width:12px;	height:17px;   float:left;	margin-right:0px; margin-top:0px}
+.tp-rightarrow.square-old								{	z-index:100;cursor:pointer; position:relative;	background:url(arrow_right2.html) no-repeat top left;	width:12px;	height:17px;   float:left;	margin-left:0px; margin-top:0px}
 
 
-.tp-leftarrow.default									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/large_left.html) no-repeat 0 0;	width:40px;	height:40px;
+.tp-leftarrow.default									{	z-index:100;cursor:pointer; position:relative;	background:url(large_left.html) no-repeat 0 0;	width:40px;	height:40px;
 
 														}
-.tp-rightarrow.default									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/large_right.html) no-repeat 0 0;	width:40px;	height:40px;
+.tp-rightarrow.default									{	z-index:100;cursor:pointer; position:relative;	background:url(large_right.html) no-repeat 0 0;	width:40px;	height:40px;
 
 														}
 
@@ -1259,9 +1259,9 @@ zoom: 1;
 
 /*  CAPTION SLIDELINK   **/
 .caption.slidelink a div,
-.tp-caption.slidelink a div {	width:3000px; height:1500px;  background:url(../assets/coloredbg.html) repeat}
+.tp-caption.slidelink a div {	width:3000px; height:1500px;  background:url(coloredbg.html) repeat}
 
-.tp-caption.slidelink a span	{	background:url(../assets/coloredbg.html) repeat}
+.tp-caption.slidelink a span	{	background:url(coloredbg.html) repeat}
 
 
 

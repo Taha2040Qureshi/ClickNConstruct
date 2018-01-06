@@ -36,22 +36,9 @@ gem 'jbuilder', '~> 2.5'
 
 # =================================================================
 
-
 #gem added by clickNconstruct Developers
 gem 'devise'
-
 gem 'omniauth-facebook'
-
-
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
-# gem 'jquery-ui-rails'
-
-
-gem 'font-awesome-sass', '~> 4.7.0'
-
-
-
 
 # =================================================================
 
