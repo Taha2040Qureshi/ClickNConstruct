@@ -38,7 +38,7 @@ Fonts
 ================================================
 */
 
-/*@font-face {
+@font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
@@ -106,7 +106,7 @@ Fonts
     font-style: italic;
     font-weight: 800;
     src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'), url(http://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxnibbpXgLHK_uTT48UMyjSM.woff2) format('woff2');
-}*/
+}
 
 
 /*
@@ -115,7 +115,7 @@ Montserrat
 ================================================
 */
 
-/*@font-face {
+@font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -127,7 +127,7 @@ Montserrat
     font-style: normal;
     font-weight: 700;
     src: local('Montserrat-Bold'), url(http://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
-}*/
+}
 
 
 /*
@@ -2020,7 +2020,7 @@ Testimonials
 */
 
 #error-page {
-    background: url(../images/404.png);
+    background: url(404.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
