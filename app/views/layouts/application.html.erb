@@ -6,13 +6,30 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
 
   </head>
 
   <body>
+     <%= render partial: "layouts/header"%>
     <%= yield %>
+     <%= render partial: "layouts/footer"%>
   </body>
 </html>
+
+
+
+
+<!-- <div id="user_nav">
+  <%# if user_signed_in? %>
+    Signed in as <%#= current_user.email %>. Not you?
+    <%#= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+  <%# else %>
+    <%#= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %>
+    <br>
+    <%#= link_to "Sign up", new_user_registration_path %> or <%#= link_to "sign in", new_user_session_path %>
+  <%# end %>
+</div> -->
+
+  <!-- <p class="notice"><%#= notice %></p>
+  <p class="alert"><%#= alert %></p> -->
+

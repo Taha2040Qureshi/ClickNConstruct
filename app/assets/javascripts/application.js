@@ -13,3 +13,17 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= jQuery.js
+//= bootstrap.js
+//= jquery.matchHeight-min.js
+//= appear.js
+//= featherlight.min.js
+//= jquery.shuffle.modernizr.min.js
+//= jquery.prettyPhoto.js
+//= spsimpleportfolio.js
+//= owl.carousel.js
+//= rev-tool.js
+//= revolation.js
+//= count-down.js
+//= parallex.js
+//= custom.js
