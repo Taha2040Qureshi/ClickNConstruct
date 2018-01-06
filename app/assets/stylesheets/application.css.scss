@@ -12,16 +12,16 @@
  *
  *= require_tree .
  *= require_self
- *= bootstrap.css
- *= settings.css
- *= static-captions.css
- *= preset1.css
- *= dynamic-captions.css
- *= owl.carousel.css
- *= owl.theme.css
- *= featherlight.min.css
- *= spsimpleportfolio.css
- *= style.css
+ *= bootstrap
+ *= settings
+ *= static-captions
+ *= preset
+ *= dynamic-captions
+ *= owl.carousel
+ *= owl.theme
+ *= featherlight.min
+ *= spsimpleportfolio
+ *= style
  */
-@import "font-awesome-sprockets";
-@import "font-awesome";
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
